@@ -18,10 +18,11 @@ public class Main {
         SocialUtil.addPost(u1,p1);
 
         try {
-            SocialUtil.likePost(u1 , 3);
+            SocialUtil.likePost(u1 , 1);
         }catch (PostNotFoundException e) {
             System.out.println(e.getMessage());
         }
 
+        SocialUtil.printUserPosts(u1);
     }
 }

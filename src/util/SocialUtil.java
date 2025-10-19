@@ -43,4 +43,11 @@ public class SocialUtil {
 
       throw new PostNotFoundException("Id uygun Post tapilmadi");
     }
+
+
+    public static void printUserPosts(User u) throws PostNotFoundException {
+        if (u.getPosts() != null ) {
+            System.out.println("User`s posts: " + u.getPosts());
+        }
+    }
 }
